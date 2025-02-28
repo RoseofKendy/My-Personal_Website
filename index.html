@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Firma</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <header>
+      <div class="navbar">
+          <div class="logo">FirmaLogo</div>
+          <nav>
+              <ul>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+      <div class="hero-content">
+          <h1>Welcome to Simple Firma</h1>
+          <p>Your trusted business partner.</p>
+          <button class="cta">Get In Touch</button>
+      </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+      <h2>About Us</h2>
+      <p>We are a leading firm offering top-notch services to help businesses grow.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+          <li>Consulting</li>
+          <li>Business Strategy</li>
+          <li>Marketing Solutions</li>
+      </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <div class="recaptcha"></div>
+          <button type="submit">Send Message</button>
+      </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+      <p>© 2025 Simple Firma. All rights reserved.</p>
+  </footer>
+  
     <script src="./script.js"></script>
   </body>
 </html>
