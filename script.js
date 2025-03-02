@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Smooth scrolling for navbar links
-    document.querySelectorAll('nav ul li a').forEach(anchor => {
+    document.querySelectorAll('nav a').forEach(anchor => {
         anchor.addEventListener('click', function (event) {
             event.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
@@ -10,6 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    document.addEventListener("DOMContentLoaded", function () {
+        const ctaButton = document.querySelector(".cta");
+    
+        setInterval(() => {
+            ctaButton.classList.toggle("pulse");
+        }, 1500);
+    });    
+
     // Scroll to Contact section when CTA button is clicked
     document.querySelector('.cta').addEventListener('click', function () {
         document.getElementById('contact').scrollIntoView({
@@ -17,15 +25,17 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Form validation
-    document.querySelector('form').addEventListener('submit', function (event) {
-        const name = document.querySelector('input[type="text"]').value.trim();
-        const email = document.querySelector('input[type="email"]').value.trim();
-        const message = document.querySelector('textarea').value.trim();
-
-        if (name === "" || email === "" || message === "") {
-            event.preventDefault();
-            alert("Please fill in all fields before submitting.");
-        }
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleButton = document.getElementById("darkModeToggle");
+        toggleButton.addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+        });
     });
-});
+
+    
+
+    // Form validation
+    
+        }
+    );
+
